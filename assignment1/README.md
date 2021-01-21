@@ -22,25 +22,6 @@ The values in a dataset tell a story. Reading the story is the process of sortin
 
 Your job is to clone this repo and solve the challenges below. After solving the challenges below push your work to GitHub, then submit your work to [GradeScope](https://www.gradescope.com/courses/218919).  
 
-## Evaluating your work
-
-Evaluate your work against the rubric.
-
-| Aspect | Does not meet | Meets | Exceeds |
-|:-------|:--------------|:------|:--------|
-| **Completion** | Did not complete the challenges | Solved all challenges | Solved stretch challenges |
-| **Code quality** | Does not follow coding best practice, the style inconsistent | Code is consistently styled and follows coding best practice, you used a linter | Code reviewed by peer |
-
-### Learing Objectives 
-
-Evaluate your knowledge of the learning objectives agains the rubic below. 
-
-| Aspect | Does not meet | Meets | Exceeds |
-|:-------|:--------------|:------|:--------|
-| **Identify Values in Titanic Dataset** | Can't identify values in the Titanic dataset | Can identify values in the Titanic dataset | Feel confident you could identify values in any dataset |
-| **Extracting Data** | Can't extract data and derive values from the Titanic dataset | Can extract relevant values from the Titanic Dataset | Could extract values from any dataset |
-| **Deriving Values** | Can't derive a count, min, and max values from a dataset| Can get the min, max, and count from a dataset | Could derive range, average, and other values from data provided in the Titanic dataset |
-
 ## Getting started
 
 This example code uses Jest as the test runner. Install it with: 
@@ -196,3 +177,25 @@ The `...` is the spread operator, use it to break an array apart into seprate pa
 ```JS
 Math.max(...[56, 23, 78, 94])
 ```
+<<<<<<< HEAD
+=======
+
+## Evaluating your work
+
+Evaluate your work against the rubric.
+
+| Aspect | Does not meet | Meets | Exceeds |
+|:-------|:--------------|:------|:--------|
+| **Completion** | Did not complete the challenges | Solved all challenges | Solved stretch challenges |
+| **Code quality** | Does not follow coding best practice, the style inconsistent | Code is consistently styled and follows coding best practice, you used a linter | Code reviewed by peer |
+
+### Learing Objectives 
+
+Evaluate your knowledge of the learning objectives agains the rubic below. 
+
+| Aspect | Does not meet | Meets | Exceeds |
+|:-------|:--------------|:------|:--------|
+| **Identify Values in Titanic Dataset** | Can't identify values in the Titanic dataset | Can identify values in the Titanic dataset | Feel confident you could identify values in any dataset |
+| **Extracting Data** | Can't extract data and derive values from the Titanic dataset | Can extract relevant values from the Titanic Dataset | Could extract values from any dataset |
+| **Deriving Values** | Can't derive a count, min, and max values from a dataset| Can get the min, max, and count from a dataset | Could derive range, average, and other values from data provided in the Titanic dataset |
+>>>>>>> soggybag

@@ -70,10 +70,9 @@ function countPassengersInClass(data, pclass) {
 // the data and passenger class. Return only passengers
 
 function getSurvivorCountForClass(data, pclass) {
-	const survivorsByClass = data.filter(passenger => {
-		return passenger.fields.pclass === pclass && passenger.fields.survived === 'Yes'
-	})
-	return survivorsByClass.length
+	return data
+    	.filter(p => p.fields.pclass === pclass && p.fields.survived == "Yes")
+    	.length
 }
 
 // 6 ---------------------------------------------------------------
@@ -82,10 +81,9 @@ function getSurvivorCountForClass(data, pclass) {
 // the number of passengers who did not survive for that class.
 
 function getCasualityCountForClass(data, pclass) {
-	const deathsByClass = data.filter(passenger => {
-		return passenger.fields.pclass === pclass && passenger.fields.survived === 'No'
-	})
-	return deathsByClass.length
+	return data
+    	.filter(p => p.fields.pclass === pclass && p.fields.survived == 'No')
+    	.length
 }
 
 // 7 ---------------------------------------------------------------
@@ -168,25 +166,7 @@ function getCasualitiesByGender(data, gender) {
     .filter(p => p.fields.sex === gender && p.fields.survived === 'No').length
 }
 
-// 15 ---------------------------------------------------------------
-// Return the number of passengers who survived by passenger class.
-
-function getSurvivorsByPClass(data, pclass) {
-	return data
-    .filter(p => p.fields.pclass === pclass && p.fields.survived == "Yes")
-    .length
-}
-
-// 16 ---------------------------------------------------------------
-// Return the number of passengers who did not survive by passenger class.
-
-function getCasualitiesByPClass(data, pclass) {
-	return data
-    .filter(p => p.fields.pclass === pclass && p.fields.survived == 'No')
-    .length
-}
-
-// 17 ---------------------------------------------------------------
+// Optional ---------------------------------------------------------------
 // Write a function that returns an array of unique values for any
 // property in the data. For example If we needed to find number
 // of passenger classes from data this function should return:
@@ -200,30 +180,21 @@ function getUniqueValues(data, property) {
   return [...new Set(props)]
 }
 
-// 18 ---------------------------------------------------------------
-// Return all of the objects in the data where a given field is
-// not undefined. If a field is undefined it means that field is
-// missing from the data.
-
-function getAllOfField(data, field) {
-	return 0
-}
-
-// 19 --------------------------------------------------------------
+// 15 --------------------------------------------------------------
 // Return the total of all fares paid.
 
 function getTotalFare(data) {
 	return 0
 }
 
-// 20 --------------------------------------------------------------
+// 16 --------------------------------------------------------------
 // Return the average fare paid.
 
 function getAverageFare(data) {
 	return 0
 }
 
-// 21 --------------------------------------------------------------
+// 17 --------------------------------------------------------------
 // Return the median fare. The median is the value equal distance
 // from the minimum and maximum values.
 
@@ -231,21 +202,21 @@ function getMedianFare(data) {
 	return 0
 }
 
-// 22 --------------------------------------------------------------
+// 18 --------------------------------------------------------------
 // Return the average age of all passengers.
 
 function getAverageAge(data) {
 	return 0
 }
 
-// 23 --------------------------------------------------------------
+// 19 --------------------------------------------------------------
 // Return the median age from passengers.
 
 function getMedianAge(data) {
 	return 0
 }
 
-// 24 --------------------------------------------------------------
+// 20 --------------------------------------------------------------
 //
 
 function getAverageAgeByGender(data, gender) {
@@ -269,8 +240,6 @@ module.exports.getMinFare = getMinFare
 module.exports.getPassengersByGender = getPassengersByGender
 module.exports.getSurvivorsByGender = getSurvivorsByGender
 module.exports.getCasualitiesByGender = getCasualitiesByGender
-module.exports.getSurvivorsByPClass = getSurvivorsByPClass
-module.exports.getCasualitiesByPClass = getCasualitiesByPClass
 module.exports.getTotalFare = getTotalFare
 module.exports.getAverageFare = getAverageFare
 module.exports.getMedianFare = getMedianFare
