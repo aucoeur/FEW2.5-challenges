@@ -16,6 +16,8 @@
 // piece of information from the data and return it.
 
 // =================================================================
+const data = require('./titanic-passengers')
+
 
 // 1 ---------------------------------------------------------------
 // Return the total number of passengers.
@@ -174,17 +176,18 @@ function getCasualitiesByGender(data, gender) {
 // function should return: ['S', 'C', 'Q']
 
 function getUniqueValues(data, property) {
-	const props = data
-    .map( p => p.fields.property)
-    .filter( prop => property === prop)
-  return [...new Set(props)]
+	// const fields = data.map(p => p.fields)
+	// return fields.filter(f => f.property === property)
+	return 0
 }
 
 // 15 --------------------------------------------------------------
 // Return the total of all fares paid.
 
 function getTotalFare(data) {
-	return 0
+	const fields = data.map(p => p.fields )
+	const fares = fields.map(p => p.fare)
+	return fares.reduce((acc, fare) => acc + fare, 0)
 }
 
 // 16 --------------------------------------------------------------
