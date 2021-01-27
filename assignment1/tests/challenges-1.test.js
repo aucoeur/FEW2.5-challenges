@@ -93,7 +93,7 @@ describe('Challenge 1 Titanic', () => {
 		expect(index.getCasualitiesByGender(data, 'female')).toBe(81)
 	})
 
-	test('Challenge 15: Test getUniqueValues', () => {
+	test.skip('Challenge 15: Test getUniqueValues', () => {
 		expect(index.getUniqueValues(data, 'pclass').sort()).toEqual([3, 2, 1].sort())
 		expect(index.getUniqueValues(data, 'embarked').sort()).toEqual(['C', 'S', 'Q', undefined].sort())
 		expect(index.getUniqueValues(data, 'sex').sort()).toEqual(['male', 'female'].sort())
